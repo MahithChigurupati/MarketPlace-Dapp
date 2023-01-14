@@ -1,5 +1,5 @@
 import "./productPage.css";
-import Card from "./card.js";
+import Card from "./Card.js";
 import WBCC from "../logo.svg";
 
 function productPage(props) {

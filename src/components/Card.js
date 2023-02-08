@@ -49,8 +49,7 @@ function Card(props) {
       const pay = await marketplaceContract.payInETH({ value: price });
       const receipt = await pay.wait();
       if (receipt.confirmations > 0) {
-        setBought(pay);
-        console.log(pay);
+        checkBought(pay);
       }
       console.log(pay);
     } else {
